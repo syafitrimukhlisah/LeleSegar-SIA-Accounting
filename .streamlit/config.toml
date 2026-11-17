@@ -1,0 +1,23 @@
+# Tema Lele Segar: terang + gelap.
+# Pengguna bisa memilih lewat menu titik tiga (kanan atas) > Settings > Theme
+# (Light / Dark / Use system setting).
+
+[theme]
+font = "sans serif"
+baseRadius = "medium"
+
+[theme.light]
+base = "light"
+primaryColor = "#0F9D8A"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F6F8"
+textColor = "#1F2933"
+borderColor = "#E3E6EA"
+
+[theme.dark]
+base = "dark"
+primaryColor = "#2BC4AE"
+backgroundColor = "#12181F"
+secondaryBackgroundColor = "#1C252E"
+textColor = "#E6EAEE"
+borderColor = "#2C3945"

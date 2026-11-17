@@ -1,0 +1,414 @@
+{
+ "accounts": [
+  {
+   "kode": "1110",
+   "nama": "Kas",
+   "tipe": "Aset"
+  },
+  {
+   "kode": "1120",
+   "nama": "Piutang Usaha",
+   "tipe": "Aset"
+  },
+  {
+   "kode": "1210",
+   "nama": "Persediaan Pakan",
+   "tipe": "Aset"
+  },
+  {
+   "kode": "1220",
+   "nama": "Persediaan Bibit",
+   "tipe": "Aset"
+  },
+  {
+   "kode": "1230",
+   "nama": "Ikan Dalam Pemeliharaan",
+   "tipe": "Aset"
+  },
+  {
+   "kode": "1310",
+   "nama": "Peralatan",
+   "tipe": "Aset"
+  },
+  {
+   "kode": "1311",
+   "nama": "Akumulasi Penyusutan",
+   "tipe": "Aset"
+  },
+  {
+   "kode": "2110",
+   "nama": "Utang Usaha",
+   "tipe": "Kewajiban"
+  },
+  {
+   "kode": "2120",
+   "nama": "Uang Muka Pelanggan (DP)",
+   "tipe": "Kewajiban"
+  },
+  {
+   "kode": "3110",
+   "nama": "Modal Pemilik",
+   "tipe": "Ekuitas"
+  },
+  {
+   "kode": "4110",
+   "nama": "Pendapatan Penjualan",
+   "tipe": "Pendapatan"
+  },
+  {
+   "kode": "5110",
+   "nama": "Beban Pakan",
+   "tipe": "Beban"
+  },
+  {
+   "kode": "5120",
+   "nama": "Beban Bibit",
+   "tipe": "Beban"
+  },
+  {
+   "kode": "5130",
+   "nama": "Beban Operasional",
+   "tipe": "Beban"
+  },
+  {
+   "kode": "5140",
+   "nama": "Beban Penyusutan",
+   "tipe": "Beban"
+  },
+  {
+   "kode": "5150",
+   "nama": "Harga Pokok Penjualan",
+   "tipe": "Beban"
+  },
+  {
+   "kode": "5160",
+   "nama": "Kerugian Ikan Mati",
+   "tipe": "Beban"
+  },
+  {
+   "kode": "5170",
+   "nama": "Beban Upah Panen",
+   "tipe": "Beban"
+  },
+  {
+   "kode": "5180",
+   "nama": "Beban Listrik dan Air",
+   "tipe": "Beban"
+  }
+ ],
+ "journals": [],
+ "journal_lines": [],
+ "purchases": [
+  {
+   "id": 2,
+   "tanggal": "2026-11-09",
+   "supplier": "toko maju jaya",
+   "kategori": "Pakan",
+   "item": "gangan",
+   "qty": 1.0,
+   "satuan": "kg30",
+   "harga": 30000.0,
+   "total": 30000.0,
+   "metode": "Tunai",
+   "jatuh_tempo": null,
+   "lunas": true,
+   "batal": false,
+   "alasan_batal": null,
+   "journal_id": null
+  },
+  {
+   "id": 4,
+   "tanggal": "2026-11-10",
+   "supplier": "lele ganteng",
+   "kategori": "Operasional",
+   "item": "ikan cupang",
+   "qty": 5.0,
+   "satuan": "1000kg",
+   "harga": 6000.0,
+   "total": 30000.0,
+   "metode": "Tunai",
+   "jatuh_tempo": null,
+   "lunas": true,
+   "batal": false,
+   "alasan_batal": null,
+   "journal_id": null
+  }
+ ],
+ "sales": [],
+ "stock_moves": [
+  {
+   "id": 1,
+   "tanggal": "2026-11-09",
+   "kategori": "Pakan",
+   "item": "tonghwey",
+   "qty": 1.0
+  }
+ ],
+ "equipment": [],
+ "cycles": [],
+ "fish_deaths": [],
+ "down_payments": [],
+ "periods": [],
+ "activity_log": [
+  {
+   "waktu": "2026-11-10T20:17:08.536747+07:00",
+   "pengguna": "admin",
+   "aksi": "login_berhasil",
+   "objek": "",
+   "detail": "",
+   "id": 1
+  },
+  {
+   "waktu": "2026-11-12T05:36:35.962126+07:00",
+   "pengguna": "-",
+   "aksi": "login_gagal",
+   "objek": "",
+   "detail": "percobaan ke-1",
+   "id": 2
+  },
+  {
+   "waktu": "2026-11-12T05:36:42.212989+07:00",
+   "pengguna": "admin",
+   "aksi": "login_berhasil",
+   "objek": "",
+   "detail": "",
+   "id": 3
+  },
+  {
+   "waktu": "2026-11-12T05:37:45.484081+07:00",
+   "pengguna": "admin",
+   "aksi": "tutup_periode",
+   "objek": "2026-11",
+   "detail": "laba Rp 4.470.000",
+   "id": 4
+  },
+  {
+   "waktu": "2026-11-12T05:46:24.007661+07:00",
+   "pengguna": "admin",
+   "aksi": "login_berhasil",
+   "objek": "",
+   "detail": "",
+   "id": 5
+  },
+  {
+   "waktu": "2026-11-12T06:42:33.854264+07:00",
+   "pengguna": "admin",
+   "aksi": "login_berhasil",
+   "objek": "",
+   "detail": "",
+   "id": 6
+  },
+  {
+   "waktu": "2026-11-12T11:31:31.004348+07:00",
+   "pengguna": "admin",
+   "aksi": "login_berhasil",
+   "objek": "",
+   "detail": "",
+   "id": 7
+  },
+  {
+   "waktu": "2026-11-12T11:32:25.280357+07:00",
+   "pengguna": "admin",
+   "aksi": "login_berhasil",
+   "objek": "",
+   "detail": "",
+   "id": 8
+  },
+  {
+   "waktu": "2026-11-12T17:54:40.133592+07:00",
+   "pengguna": "admin",
+   "aksi": "login_berhasil",
+   "objek": "",
+   "detail": "",
+   "id": 9
+  },
+  {
+   "waktu": "2026-11-14T15:01:10.691878+07:00",
+   "pengguna": "-",
+   "aksi": "login_gagal",
+   "objek": "",
+   "detail": "percobaan ke-1",
+   "id": 10
+  },
+  {
+   "waktu": "2026-11-14T15:01:17.235725+07:00",
+   "pengguna": "admin",
+   "aksi": "login_berhasil",
+   "objek": "",
+   "detail": "",
+   "id": 11
+  },
+  {
+   "waktu": "2026-11-14T15:11:55.191390+07:00",
+   "pengguna": "admin",
+   "aksi": "login_berhasil",
+   "objek": "",
+   "detail": "",
+   "id": 12
+  },
+  {
+   "waktu": "2026-11-14T15:19:04.049589+07:00",
+   "pengguna": "admin",
+   "aksi": "login_berhasil",
+   "objek": "",
+   "detail": "",
+   "id": 13
+  },
+  {
+   "waktu": "2026-11-14T15:21:30.834110+07:00",
+   "pengguna": "admin",
+   "aksi": "buka_kembali_periode",
+   "objek": "2026-11",
+   "detail": "ubah transaksi",
+   "id": 14
+  },
+  {
+   "waktu": "2026-11-14T15:22:12.697698+07:00",
+   "pengguna": "admin",
+   "aksi": "hapus_permanen",
+   "objek": "sales#2",
+   "detail": "Rp 3.000.000",
+   "id": 15
+  },
+  {
+   "waktu": "2026-11-14T15:22:33.418597+07:00",
+   "pengguna": "admin",
+   "aksi": "hapus_jurnal",
+   "objek": "#5",
+   "detail": "Beli Ikan Kontol",
+   "id": 16
+  },
+  {
+   "waktu": "2026-11-14T15:24:32.933374+07:00",
+   "pengguna": "admin",
+   "aksi": "hapus_permanen",
+   "objek": "purchases#3",
+   "detail": "Rp 5.000",
+   "id": 17
+  },
+  {
+   "waktu": "2026-11-14T15:24:45.915870+07:00",
+   "pengguna": "admin",
+   "aksi": "hapus_permanen",
+   "objek": "sales#1",
+   "detail": "Rp 4.500.000",
+   "id": 18
+  },
+  {
+   "waktu": "2026-11-14T15:25:05.669543+07:00",
+   "pengguna": "admin",
+   "aksi": "hapus_jurnal",
+   "objek": "#2",
+   "detail": "Beli tonghwey",
+   "id": 19
+  },
+  {
+   "waktu": "2026-11-14T15:26:12.085956+07:00",
+   "pengguna": "admin",
+   "aksi": "ubah_master",
+   "objek": "suppliers",
+   "detail": "4 baris",
+   "id": 20
+  }
+ ],
+ "suppliers": [
+  {
+   "nama": "Supplier Bibit Ungaran",
+   "jenis_pasokan": "Bibit",
+   "daerah": "Ungaran",
+   "kontak": null,
+   "termin": "Tunai",
+   "catatan": "Isi catatan kualitas dan harga bibit",
+   "aktif": true,
+   "id": 1
+  },
+  {
+   "nama": "Supplier Bibit Tugu Semarang",
+   "jenis_pasokan": "Bibit",
+   "daerah": "Tugu Semarang",
+   "kontak": null,
+   "termin": "Tunai",
+   "catatan": "Isi catatan kualitas dan harga bibit",
+   "aktif": true,
+   "id": 2
+  },
+  {
+   "nama": "Supplier Bibit Jawa Timur",
+   "jenis_pasokan": "Bibit",
+   "daerah": "Jawa Timur",
+   "kontak": null,
+   "termin": "Tunai",
+   "catatan": "Isi catatan kualitas dan harga bibit",
+   "aktif": true,
+   "id": 3
+  },
+  {
+   "nama": "Toko Pakan Langganan",
+   "jenis_pasokan": "Pakan",
+   "daerah": "Semarang",
+   "kontak": null,
+   "termin": NaN,
+   "catatan": "Pakan Tongwe, beli sekitar 500 kg per minggu",
+   "aktif": true,
+   "id": 4
+  }
+ ],
+ "customers": [
+  {
+   "nama": "Pelanggan Tetap 1",
+   "kategori": "Pelanggan tetap",
+   "kontak": null,
+   "aturan_dp": "DP dulu sebelum panen",
+   "catatan": "Memakai nota",
+   "aktif": true,
+   "id": 1
+  },
+  {
+   "nama": "SPPG",
+   "kategori": "SPPG",
+   "kontak": null,
+   "aturan_dp": NaN,
+   "catatan": "Biasanya kredit",
+   "aktif": true,
+   "id": 2
+  },
+  {
+   "nama": "Pembeli Langsung",
+   "kategori": "Pembeli langsung",
+   "kontak": null,
+   "aturan_dp": NaN,
+   "catatan": NaN,
+   "aktif": true,
+   "id": 3
+  }
+ ],
+ "items": [
+  {
+   "nama": "Bibit Lele Mutiara",
+   "kategori": "Bibit",
+   "satuan": "ekor",
+   "harga_ref": 185,
+   "stok_min": 0,
+   "aktif": true,
+   "id": 1
+  },
+  {
+   "nama": "Pakan Tongwe",
+   "kategori": "Pakan",
+   "satuan": "kg",
+   "harga_ref": 15500,
+   "stok_min": 150,
+   "aktif": true,
+   "id": 2
+  },
+  {
+   "nama": "Perlengkapan (jaring, serok, ember)",
+   "kategori": "Operasional",
+   "satuan": "unit",
+   "harga_ref": 0,
+   "stok_min": 0,
+   "aktif": true,
+   "id": 3
+  }
+ ]
+}
