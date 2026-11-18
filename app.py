@@ -14,7 +14,28 @@ from supabase import create_client
 # =========================================================
 # SIA BUDIDAYA LELE
 # =========================================================
-st.set_page_config(page_title="Lele Segar 🐠", page_icon="🐠", layout="wide")
+# Logo aplikasi: simpan file logo.png di folder yang sama dengan app.py.
+# Jika berkas tidak ditemukan, aplikasi memakai tampilan teks + emoji seperti semula.
+_FOLDER = os.path.dirname(os.path.abspath(__file__))
+_EKSTENSI = (".png", ".jpg", ".jpeg", ".webp")
+_ABAIKAN = {"data_lokal", ".venv", "venv", "__pycache__", ".git", ".streamlit", ".vscode"}
+
+
+def _cari_logo():
+    """Cari berkas gambar bernama 'logo' di folder app.py dan subfoldernya."""
+    for akar, subfolder, berkas in os.walk(_FOLDER):
+        subfolder[:] = [d for d in subfolder if d not in _ABAIKAN]
+        for f in sorted(berkas):
+            if f.lower().endswith(_EKSTENSI) and "logo" in f.lower():
+                return os.path.join(akar, f)
+    return None
+
+
+LOGO = _cari_logo()
+ADA_LOGO = LOGO is not None
+
+st.set_page_config(page_title="Lele Segar", page_icon=LOGO if ADA_LOGO else "🐠",
+                   layout="wide")
 
 KAS, PIUTANG, UTANG, MODAL, JUAL = "1110", "1120", "2110", "3110", "4110"
 KOLAM_AKUN, DP_AKUN = "1230", "2120"            # Ikan Dalam Pemeliharaan, Uang Muka Pelanggan
@@ -649,7 +670,12 @@ def halaman_login():
     kiri, kanan = st.columns([1.15, 1], gap="large", vertical_alignment="center")
 
     with kiri:
-        st.markdown("# Lele Segar 🐠")
+        if ADA_LOGO:
+            k_logo, k_teks = st.columns([1, 3], vertical_alignment="center")
+            k_logo.image(LOGO, width=110)
+            k_teks.markdown("# Lele Segar")
+        else:
+            st.markdown("# Lele Segar 🐠")
         st.markdown("##### Catatan keuangan budidaya lele, dari kolam sampai laporan.")
         st.write("")
         st.markdown(
@@ -2872,9 +2898,13 @@ def main():
         "Pengaturan": [P["Data Master"], P["Periode"], P["Riwayat"]],
     }, position="top")
 
-    # Baris kepala: nama aplikasi di kiri, akun pengguna di kanan.
-    kepala, akun = st.columns([5, 1.3], vertical_alignment="center")
-    kepala.markdown("#### Lele Segar 🐠")
+    # Baris kepala: logo di kiri, akun pengguna di kanan.
+    k_logo, kepala, akun = st.columns([0.7, 4.3, 1.3], vertical_alignment="center")
+    if ADA_LOGO:
+        k_logo.image(LOGO, width=64)
+        kepala.markdown("#### Lele Segar")
+    else:
+        kepala.markdown("#### Lele Segar 🐠")
     with akun.popover(st.session_state.get("user", "Akun"),
                       icon=":material/account_circle:", use_container_width=True):
         st.caption("Masuk sebagai")
@@ -2908,4 +2938,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()         
+    main()
